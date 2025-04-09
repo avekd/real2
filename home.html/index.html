@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão sobre Imagem</title>
+    <style>
+        .imagem-com-botao {
+            position: relative;
+            display: inline-block;
+        }
+
+        .imagem-com-botao img {
+            width: 100%; /* Ajuste a largura da imagem conforme necessário */
+        }
+
+        .botao-na-imagem {
+            position: absolute;
+            top: 50%; /* Ajusta a posição do botão (meio da imagem) */
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centraliza o botão */
+            padding: 10px 20px;
+            background-color: rgba(0, 123, 255, 0.8);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botao-na-imagem:hover {
+            background-color: rgba(0, 123, 255, 1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="imagem-com-botao">
+        <img src="https://github.com/avekd/real2/blob/main/IMG-20250408-WA0032.jpg" width="11500" height="700" alt="Imagem com botão">
+        <button class="botao-na-imagem" onclick="alert('Botão pressionado!')">Clique Aqui</button>
+    </div>
+
+</body>
+</html>
